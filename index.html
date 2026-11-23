@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Femia Domenico — Vivaio e piante a Marina di Gioiosa Jonica</title>
-<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, aromatiche, arredo giardini e movimento terra.">
+<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, ciclamini, aromatiche, arredo giardini e movimento terra.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Femia Domenico — Vivaio">
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="Femia Domenico — Vivaio a Marina di Gioiosa Jonica">
-<meta property="og:description" content="Piante da fiore coltivate in Calabria: crisantemi, stelle di Natale, aromatiche e piante da giardino. Arredo giardini e movimento terra.">
+<meta property="og:description" content="Piante da fiore coltivate in Calabria: crisantemi, stelle di Natale, ciclamini, aromatiche e piante da giardino. Arredo giardini e movimento terra.">
 <meta property="og:url" content="https://savermall.github.io/vivaio-femia-demo/">
 <meta property="og:image" content="https://savermall.github.io/vivaio-femia-demo/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -142,8 +142,9 @@
   .natale-inner{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:64px 0}
   .natale h2{font-size:clamp(30px,3.8vw,46px); margin:10px 0 14px; line-height:1.1}
   .natale p{color:rgba(246,241,230,.8); max-width:56ch; margin:0 0 24px}
-  .star-wrap{display:flex; justify-content:center; align-items:center}
-  .star-wrap svg{width:min(260px,72%); height:auto; filter:drop-shadow(0 18px 40px rgba(0,0,0,.3))}
+  .natale-photo{position:relative; border-radius:24px; overflow:hidden; aspect-ratio:4/5; border:1px solid rgba(246,241,230,.18); box-shadow:0 30px 70px rgba(0,0,0,.35); background:#2a0f0e}
+  .natale-photo img{width:100%; height:100%; object-fit:cover}
+  .natale-photo figcaption{position:absolute; left:0; right:0; bottom:0; padding:16px 18px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#fff; background:linear-gradient(transparent,rgba(0,0,0,.6))}
   .natale .eyebrow{color:#e9c77e}
 
   /* AZIENDA */
@@ -218,8 +219,7 @@
     .split-img{max-width:460px}
     .servizi-grid{grid-template-columns:1fr}
     .natale-inner{grid-template-columns:1fr; padding:48px 0}
-    .star-wrap{order:-1}
-    .star-wrap svg{width:150px}
+    .natale-photo{order:-1; max-width:430px; width:100%; margin:0 auto}
     .contatti-grid{grid-template-columns:1fr; gap:36px}
     .nav-cta .btn-label{display:none}
     .nav-cta .btn{padding:11px 14px}
@@ -293,7 +293,7 @@
       <div>
         <span class="eyebrow" style="color:#e9c77e">Vivaio · Marina di Gioiosa Jonica</span>
         <h1 id="hero-title">Piante da fiore<br>che nascono <em>qui</em>.</h1>
-        <p class="lead">Coltiviamo crisantemi, stelle di Natale, piante da fiore e aromatiche in pieno campo e in serra, sulla costa ionica della Calabria. Produzione propria, piante curate, consigli veri.</p>
+        <p class="lead">Coltiviamo crisantemi, stelle di Natale, ciclamini, piante da fiore e aromatiche in pieno campo e in serra, sulla costa ionica della Calabria. Produzione propria, piante curate, consigli veri.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="tel:+393207537760">Chiama il vivaio</a>
           <a class="btn btn-ghost" href="#produzioni">Scopri le produzioni</a>
@@ -319,8 +319,8 @@
   <div class="seasons">
     <div class="wrap seasons-grid">
       <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Stelle di Natale</b><span>Novembre – Dicembre</span></span></div>
+      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Ciclamini</b><span>Autunno – Inverno</span></span></div>
       <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Crisantemi</b><span>Ottobre – Novembre</span></span></div>
-      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Piante da fiore</b><span>Primavera – Autunno</span></span></div>
       <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Aromatiche e frutti</b><span>Stagione estiva</span></span></div>
     </div>
   </div>
@@ -339,7 +339,7 @@
         </article>
         <article class="card">
           <div class="card-img"><img src="img/dipladenia.webp" alt="Dipladenia in vaso sospeso con fiori rosa" width="1080" height="1440"></div>
-          <div class="card-body"><span class="tag">Primavera – Autunno</span><h3>Piante da fiore</h3><p>Dipladenie, vinca, gerani e fioriture da balcone e terrazzo.</p></div>
+          <div class="card-body"><span class="tag">Primavera – Autunno</span><h3>Piante da fiore</h3><p>Dipladenie, vinca, gerani, ciclamini in stagione e fioriture da balcone.</p></div>
         </article>
         <article class="card">
           <div class="card-img"><img src="img/fragole.webp" alt="Pianta di fragola in vaso appeso con frutti maturi" width="1080" height="1440"></div>
@@ -357,25 +357,14 @@
     <div class="wrap natale-inner">
       <div>
         <span class="eyebrow">La stagione più attesa</span>
-        <h2 id="natale-title">Stelle di Natale,<br>colte al momento giusto.</h2>
-        <p>Da novembre arrivano in vivaio le stelle di Natale: piante compatte, con brattee rosse piene e una cura che si vede. Per casa, per un regalo, per allestire la tua attività.</p>
-        <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20informazioni%20sulle%20stelle%20di%20Natale" target="_blank" rel="noopener">Chiedi disponibilità su WhatsApp</a>
+        <h2 id="natale-title">Stelle di Natale e ciclamini,<br>colti al momento giusto.</h2>
+        <p>Da novembre arrivano in vivaio le stelle di Natale e i ciclamini: piante compatte, con brattee rosse piene, fiori che durano e una cura che si vede. Per casa, per un regalo, per allestire la tua attività.</p>
+        <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20informazioni%20su%20stelle%20di%20Natale%20e%20ciclamini" target="_blank" rel="noopener">Chiedi disponibilità su WhatsApp</a>
       </div>
-      <div class="star-wrap" aria-hidden="true">
-        <svg viewBox="0 0 200 200" fill="none">
-          <g stroke="#e9c77e" stroke-width="1.6" opacity=".9">
-            <path d="M100 22v156M22 100h156M45 45l110 110M155 45L45 155" stroke-linecap="round"/>
-          </g>
-          <g fill="#c25a34" opacity=".95">
-            <ellipse cx="100" cy="62" rx="17" ry="34"/>
-            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(45 100 100)"/>
-            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(90 100 100)"/>
-            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(135 100 100)"/>
-          </g>
-          <circle cx="100" cy="100" r="13" fill="#e9c77e"/>
-          <circle cx="100" cy="100" r="5" fill="#4d1b19"/>
-        </svg>
-      </div>
+      <figure class="natale-photo">
+        <img src="img/stelle-natale.webp" alt="Serra del vivaio piena di stelle di Natale rosse in vaso" width="900" height="1125">
+        <figcaption>Le stelle di Natale in serra</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -493,7 +482,7 @@
   "@context":"https://schema.org",
   "@type":"GardenStore",
   "name":"Femia Domenico",
-  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale e aromatiche. Arredo giardini e movimento terra.",
+  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale, ciclamini e aromatiche. Arredo giardini e movimento terra.",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"Via Ligonia Carella, 2",
