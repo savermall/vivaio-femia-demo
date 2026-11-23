@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Femia Domenico — Vivaio e piante a Marina di Gioiosa Jonica</title>
-<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, ciclamini, ulivi e piante di grande formato, arredo giardini e movimento terra.">
+<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, ciclamini, ulivi, arredo giardini, movimento terra e noleggio piante ornamentali per eventi.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Femia Domenico — Vivaio">
@@ -71,7 +71,7 @@
   .brand-mark{width:42px; height:42px; border-radius:12px; background:var(--verde); display:grid; place-items:center; flex:0 0 auto}
   .brand-name{font-family:'Fraunces',serif; font-size:22px; line-height:1.05; letter-spacing:-.02em}
   .brand-sub{display:block; font-family:'Inter',sans-serif; font-size:9.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--muto); margin-top:4px}
-  .nav-links{display:flex; gap:30px; align-items:center}
+  .nav-links{display:flex; gap:24px; align-items:center}
   .nav-links a{text-decoration:none; font-size:14.5px; font-weight:500; color:#3a4238; position:relative}
   .nav-links a::after{content:""; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:var(--terra); transform:scaleX(0); transform-origin:left; transition:transform .2s ease}
   .nav-links a:hover::after{transform:scaleX(1)}
@@ -181,6 +181,18 @@
   .rental-cta{display:flex; flex-wrap:wrap; gap:12px}
   .rental-note{font-size:12.5px; color:var(--muto); margin-top:16px}
 
+  /* NOLEGGIO PIANTE */
+  .rental2{background:radial-gradient(900px 520px at 84% 0%, #245034 0%, var(--verde) 55%, #0f2417 100%); color:var(--crema); padding:88px 0; border-top:1px solid rgba(246,241,230,.08)}
+  .rental2-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:end; margin-bottom:38px}
+  .rental2 .eyebrow{color:#e9c77e}
+  .rental2 h2{font-size:clamp(30px,3.8vw,46px); line-height:1.08; margin:12px 0 0}
+  .rental2 p.lead{color:rgba(246,241,230,.8); margin:0 0 20px; max-width:52ch}
+  .rental2 .rental-list{margin:0 0 24px; display:flex; flex-wrap:wrap; gap:8px; padding:0; list-style:none}
+  .rental2 .rental-list li{border:1px solid rgba(246,241,230,.24); background:rgba(246,241,230,.07); color:rgba(246,241,230,.88); border-radius:999px; padding:8px 14px; font-size:13px}
+  .rental-banner{margin:0; border-radius:24px; overflow:hidden; border:1px solid rgba(246,241,230,.14); box-shadow:0 30px 70px rgba(0,0,0,.32); background:#0f2417}
+  .rental-banner img{width:100%; height:auto; display:block}
+  .rental2 .rental-note{color:rgba(246,241,230,.55); font-size:12.5px; margin:16px 0 0}
+
   /* GALLERIA */
   .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
   .gallery figure{margin:0; border-radius:16px; overflow:hidden; position:relative; aspect-ratio:4/5; background:var(--crema)}
@@ -235,6 +247,8 @@
     .rental-grid{grid-template-columns:1fr; gap:32px}
     .rental-visual{order:-1; max-width:520px; width:100%; margin:0 auto; justify-self:center}
     .rental-visual .note{left:12px; bottom:12px}
+    .rental2-grid{grid-template-columns:1fr; gap:26px}
+    .rental2{padding:64px 0}
     .split-img{max-width:460px}
     .servizi-grid{grid-template-columns:1fr}
     .natale-inner{grid-template-columns:1fr; padding:48px 0}
@@ -284,6 +298,7 @@
       <a href="#azienda">Il vivaio</a>
       <a href="#servizi">Servizi</a>
       <a href="#ulivi">Ulivi</a>
+      <a href="#noleggio">Noleggio</a>
       <a href="#galleria">Galleria</a>
       <a href="#contatti">Contatti</a>
     </nav>
@@ -299,6 +314,7 @@
           <a href="#azienda">Il vivaio</a>
           <a href="#servizi">Servizi</a>
           <a href="#ulivi">Ulivi</a>
+          <a href="#noleggio">Noleggio</a>
           <a href="#galleria">Galleria</a>
           <a href="#contatti">Contatti</a>
         </div>
@@ -467,6 +483,34 @@
     </div>
   </section>
 
+  <section id="noleggio" class="rental2">
+    <div class="wrap">
+      <div class="rental2-grid">
+        <div>
+          <span class="eyebrow">Noleggio piante</span>
+          <h2>Piante ornamentali<br>a noleggio per il tuo evento.</h2>
+        </div>
+        <div>
+          <p class="lead">Noleggio a breve termine di piante ornamentali per matrimoni, feste e allestimenti: palme, banani e arbusti fioriti in vaso, da inserire nello spazio dell'evento.</p>
+          <ul class="rental-list">
+            <li>Matrimoni e cerimonie</li>
+            <li>Feste private</li>
+            <li>Allestimenti</li>
+            <li>Eventi aziendali</li>
+          </ul>
+          <div style="display:flex; gap:12px; flex-wrap:wrap">
+            <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20informazioni%20sul%20noleggio%20di%20piante%20per%20un%20evento" target="_blank" rel="noopener">Chiedi disponibilità</a>
+            <a class="btn btn-ghost" href="tel:+393207537760">320 753 7760</a>
+          </div>
+        </div>
+      </div>
+      <figure class="rental-banner">
+        <img src="img/noleggio-piante.webp" alt="Piante ornamentali in vaso pronte per il noleggio" width="900" height="393">
+      </figure>
+      <p class="rental-note">Noleggio a breve termine. Disponibilità e periodo da concordare con il vivaio.</p>
+    </div>
+  </section>
+
   <section id="galleria">
     <div class="wrap">
       <div class="section-head">
@@ -539,7 +583,7 @@
   "@context":"https://schema.org",
   "@type":"GardenStore",
   "name":"Femia Domenico",
-  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale, ciclamini e aromatiche. Arredo giardini, movimento terra e ulivi di grande formato.",
+  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale, ciclamini e aromatiche. Arredo giardini, movimento terra, ulivi di grande formato e noleggio piante ornamentali per eventi.",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"Via Ligonia Carella, 2",
