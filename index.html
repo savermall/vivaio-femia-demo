@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Femia Domenico — Vivaio e piante a Marina di Gioiosa Jonica</title>
+<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, aromatiche, arredo giardini e movimento terra.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Femia Domenico — Vivaio">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Femia Domenico — Vivaio a Marina di Gioiosa Jonica">
+<meta property="og:description" content="Piante da fiore coltivate in Calabria: crisantemi, stelle di Natale, aromatiche e piante da giardino. Arredo giardini e movimento terra.">
+<meta property="og:url" content="https://savermall.github.io/vivaio-femia-demo/">
+<meta property="og:image" content="https://savermall.github.io/vivaio-femia-demo/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Femia Domenico — Vivaio a Marina di Gioiosa Jonica">
+<meta name="twitter:description" content="Piante da fiore coltivate in Calabria: crisantemi, stelle di Natale, aromatiche e piante da giardino.">
+<meta name="twitter:image" content="https://savermall.github.io/vivaio-femia-demo/img/og.jpg">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316301f'/%3E%3Cpath d='M32 50V26M32 34c-8 0-13-5-13-13 8 0 13 5 13 13zm0 6c8 0 13-5 13-13-8 0-13 5-13 13z' stroke='%23f7f3ea' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --verde:#16301f; --verde-2:#1e4029; --verde-3:#2b5a3b;
+    --crema:#f6f1e6; --carta:#fbf8f1; --bianco:#ffffff;
+    --terra:#c25a34; --terra-scuro:#a8492a; --oro:#c9a24b;
+    --testo:#22271f; --muto:#6d7468; --linea:rgba(34,39,31,.12);
+    --radius:22px;
+    --max:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--carta); color:var(--testo);
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  img{display:block; max-width:100%}
+  a{color:inherit}
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:500; letter-spacing:-.01em}
+  .wrap{width:100%; max-width:var(--max); margin:0 auto; padding:0 24px}
+  .eyebrow{font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color:var(--terra)}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; padding:14px 24px;
+    border-radius:999px; text-decoration:none; font-weight:600; font-size:15px;
+    border:1px solid transparent; transition:transform .18s ease, background .18s ease, color .18s ease;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--terra); color:#fff}
+  .btn-primary:hover{background:var(--terra-scuro)}
+  .btn-ghost{border-color:rgba(246,241,230,.35); color:var(--crema)}
+  .btn-ghost:hover{background:rgba(246,241,230,.1)}
+  .btn-dark{background:var(--verde); color:var(--crema)}
+  .btn-dark:hover{background:var(--verde-2)}
+
+  .demo-bar{
+    background:var(--verde); color:rgba(246,241,230,.72);
+    font-size:12px; letter-spacing:.08em; text-transform:uppercase; text-align:center;
+    padding:7px 16px;
+  }
+  .demo-bar strong{color:var(--oro); font-weight:600}
+
+  header.site{
+    position:sticky; top:0; z-index:50; background:rgba(251,248,241,.92);
+    backdrop-filter:blur(12px); border-bottom:1px solid var(--linea);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; gap:28px; height:82px}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+  .brand-mark{width:42px; height:42px; border-radius:12px; background:var(--verde); display:grid; place-items:center; flex:0 0 auto}
+  .brand-name{font-family:'Fraunces',serif; font-size:22px; line-height:1.05; letter-spacing:-.02em}
+  .brand-sub{display:block; font-family:'Inter',sans-serif; font-size:9.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--muto); margin-top:4px}
+  .nav-links{display:flex; gap:30px; align-items:center}
+  .nav-links a{text-decoration:none; font-size:14.5px; font-weight:500; color:#3a4238; position:relative}
+  .nav-links a::after{content:""; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:var(--terra); transform:scaleX(0); transform-origin:left; transition:transform .2s ease}
+  .nav-links a:hover::after{transform:scaleX(1)}
+  .nav-cta{display:flex; align-items:center; gap:12px}
+  .nav-cta .btn{padding:11px 19px; font-size:14px}
+  .menu{display:none; position:relative}
+  .menu summary{list-style:none; cursor:pointer; border:1px solid var(--linea); border-radius:999px; padding:9px 16px; font-size:14px; font-weight:600}
+  .menu summary::-webkit-details-marker{display:none}
+  .menu-panel{position:absolute; right:0; top:52px; background:var(--carta); border:1px solid var(--linea); border-radius:16px; box-shadow:0 18px 45px rgba(22,48,31,.14); padding:10px; min-width:210px}
+  .menu-panel a{display:block; padding:10px 14px; text-decoration:none; border-radius:10px; font-size:15px}
+  .menu-panel a:hover{background:var(--crema)}
+
+  /* HERO */
+  .hero{background:radial-gradient(1200px 600px at 78% 0%, #245034 0%, var(--verde) 52%, #0f2417 100%); color:var(--crema); overflow:hidden; position:relative}
+  .hero::before{content:""; position:absolute; inset:0; background-image:radial-gradient(rgba(246,241,230,.05) 1px, transparent 1px); background-size:22px 22px; opacity:.5; pointer-events:none}
+  .hero-grid{display:grid; grid-template-columns:1.06fr .94fr; gap:64px; align-items:center; padding:74px 0 84px; position:relative}
+  .hero h1{font-size:clamp(40px,5.2vw,66px); line-height:1.04; margin:18px 0 22px; letter-spacing:-.03em}
+  .hero h1 em{font-style:italic; color:#e9c77e}
+  .hero p.lead{font-size:18.5px; color:rgba(246,241,230,.78); max-width:52ch; margin:0 0 32px}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px}
+  .hero-facts{display:flex; gap:34px; margin-top:46px; padding-top:26px; border-top:1px solid rgba(246,241,230,.16); flex-wrap:wrap}
+  .fact strong{display:block; font-family:'Fraunces',serif; font-size:21px; font-weight:500; color:var(--crema)}
+  .fact span{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:rgba(246,241,230,.55)}
+  .hero-visual{position:relative}
+  .arch{position:relative; border-radius:300px 300px 26px 26px; overflow:hidden; aspect-ratio:3/4; box-shadow:0 40px 80px rgba(0,0,0,.35)}
+  .arch img{width:100%; height:100%; object-fit:cover}
+  .arch::after{content:""; position:absolute; inset:0; box-shadow:inset 0 0 0 1px rgba(255,255,255,.14); border-radius:inherit}
+  .badge{
+    position:absolute; left:-26px; bottom:34px; background:var(--crema); color:var(--verde);
+    border-radius:16px; padding:14px 18px; display:flex; gap:12px; align-items:center;
+    box-shadow:0 18px 40px rgba(0,0,0,.22); max-width:260px;
+  }
+  .badge svg{flex:0 0 auto}
+  .badge b{font-size:13.5px; display:block; line-height:1.3}
+  .badge small{font-size:11.5px; color:var(--muto); line-height:1.35; display:block; margin-top:2px}
+
+  /* SEASON STRIP */
+  .seasons{background:var(--crema); border-bottom:1px solid var(--linea)}
+  .seasons-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0}
+  .season{padding:26px 22px; border-left:1px solid var(--linea); display:flex; gap:14px; align-items:flex-start}
+  .season:first-child{border-left:0; padding-left:0}
+  .season .dot{width:9px; height:9px; border-radius:50%; background:var(--terra); margin-top:8px; flex:0 0 auto}
+  .season:nth-child(2) .dot{background:var(--oro)}
+  .season:nth-child(3) .dot{background:var(--verde-3)}
+  .season:nth-child(4) .dot{background:#8a5a8f}
+  .season b{display:block; font-size:15px; font-weight:600}
+  .season span{font-size:12.5px; color:var(--muto)}
+
+  section{padding:92px 0}
+  .section-head{max-width:640px; margin-bottom:44px}
+  .section-head h2{font-size:clamp(30px,3.6vw,44px); line-height:1.12; margin:12px 0 14px}
+  .section-head p{color:var(--muto); margin:0; font-size:17px}
+
+  /* CARDS */
+  .cards{display:grid; grid-template-columns:repeat(4,1fr); gap:22px}
+  .card{background:var(--bianco); border:1px solid var(--linea); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column; transition:transform .25s ease, box-shadow .25s ease}
+  .card:hover{transform:translateY(-4px); box-shadow:0 22px 50px rgba(22,48,31,.11)}
+  .card-img{aspect-ratio:4/5; overflow:hidden}
+  .card-img img{width:100%; height:100%; object-fit:cover; transition:transform .6s ease}
+  .card:hover .card-img img{transform:scale(1.04)}
+  .card-body{padding:20px 20px 22px}
+  .card-body h3{font-size:21px; margin:0 0 6px}
+  .card-body p{font-size:14.5px; color:var(--muto); margin:0}
+  .tag{display:inline-block; font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--terra); font-weight:600; margin-bottom:10px}
+
+  /* NATALE */
+  .natale{background:linear-gradient(120deg,#4d1b19 0%,#6e2620 55%,#3f1716 100%); color:var(--crema); padding:0; overflow:hidden; position:relative}
+  .natale-inner{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; padding:64px 0}
+  .natale h2{font-size:clamp(30px,3.8vw,46px); margin:10px 0 14px; line-height:1.1}
+  .natale p{color:rgba(246,241,230,.8); max-width:56ch; margin:0 0 24px}
+  .star-wrap{display:flex; justify-content:center; align-items:center}
+  .star-wrap svg{width:min(260px,72%); height:auto; filter:drop-shadow(0 18px 40px rgba(0,0,0,.3))}
+  .natale .eyebrow{color:#e9c77e}
+
+  /* AZIENDA */
+  .split{display:grid; grid-template-columns:.92fr 1.08fr; gap:64px; align-items:center}
+  .split-img{border-radius:var(--radius); overflow:hidden; aspect-ratio:4/5; box-shadow:0 30px 60px rgba(22,48,31,.14)}
+  .split-img img{width:100%; height:100%; object-fit:cover}
+  .split h2{font-size:clamp(30px,3.6vw,44px); line-height:1.12; margin:12px 0 18px}
+  .split p{color:#4c5348; margin:0 0 16px}
+  .mini-list{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px; padding-top:26px; border-top:1px solid var(--linea)}
+  .mini-list b{display:block; font-size:14.5px; margin-bottom:3px}
+  .mini-list span{font-size:12.5px; color:var(--muto); line-height:1.4; display:block}
+
+  /* SERVIZI */
+  .servizi{background:var(--crema); border-top:1px solid var(--linea); border-bottom:1px solid var(--linea)}
+  .servizi-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+  .servizio{background:var(--bianco); border:1px solid var(--linea); border-radius:var(--radius); padding:34px}
+  .servizio .ico{width:52px; height:52px; border-radius:14px; background:var(--verde); display:grid; place-items:center; margin-bottom:20px}
+  .servizio h3{font-size:24px; margin:0 0 8px}
+  .servizio p{color:var(--muto); font-size:15.5px; margin:0}
+
+  /* GALLERIA */
+  .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .gallery figure{margin:0; border-radius:16px; overflow:hidden; position:relative; aspect-ratio:4/5; background:var(--crema)}
+  .gallery img{width:100%; height:100%; object-fit:cover; transition:transform .6s ease}
+  .gallery figure:hover img{transform:scale(1.05)}
+  .gallery figure.wide{grid-column:span 3; aspect-ratio:auto; height:280px}
+  .gallery figcaption{position:absolute; left:0; right:0; bottom:0; padding:14px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#fff; background:linear-gradient(transparent,rgba(0,0,0,.55))}
+
+  /* CONTATTI */
+  .contatti{background:var(--verde); color:var(--crema); padding:88px 0}
+  .contatti-grid{display:grid; grid-template-columns:1.02fr .98fr; gap:56px; align-items:start}
+  .contatti h2{font-size:clamp(32px,4vw,50px); line-height:1.08; margin:12px 0 16px}
+  .contatti p.lead{color:rgba(246,241,230,.72); margin:0 0 34px; max-width:46ch}
+  .contatti .eyebrow{color:var(--oro)}
+  .contact-list{display:grid; gap:18px; margin:0 0 30px; padding:0; list-style:none}
+  .contact-list li{display:flex; gap:14px; align-items:flex-start}
+  .contact-list .ci{width:38px; height:38px; border-radius:10px; background:rgba(246,241,230,.1); display:grid; place-items:center; flex:0 0 auto}
+  .contact-list b{display:block; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:rgba(246,241,230,.5); font-weight:600; margin-bottom:2px}
+  .contact-list a, .contact-list span.val{font-size:16px; text-decoration:none; color:var(--crema)}
+  .contact-list a:hover{color:#e9c77e}
+  .map-card{background:linear-gradient(140deg,#234a31,#17301f); border:1px solid rgba(246,241,230,.14); border-radius:var(--radius); padding:28px; position:relative; overflow:hidden}
+  .map-card::before{content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(246,241,230,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(246,241,230,.05) 1px,transparent 1px); background-size:34px 34px}
+  .map-card > *{position:relative}
+  .map-card h3{font-size:22px; margin:0 0 6px}
+  .map-card p{color:rgba(246,241,230,.8); font-size:14.5px; margin:0 0 22px}
+  .hours{border-top:1px solid rgba(246,241,230,.14); margin-top:22px; padding-top:18px; font-size:14px; color:rgba(246,241,230,.82)}
+  .hours b{color:var(--crema); display:block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:6px}
+
+  footer{background:#0f2417; color:rgba(246,241,230,.55); font-size:13px; padding:34px 0}
+  .foot{display:flex; justify-content:space-between; gap:24px; align-items:center; flex-wrap:wrap}
+  .foot a{color:rgba(246,241,230,.8); text-decoration:none}
+  .foot a:hover{color:#e9c77e}
+
+  @media (max-width:1000px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .hero-grid{gap:40px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .gallery figure.wide{grid-column:span 2; height:220px}
+    .nav-links{display:none}
+    .menu{display:block}
+  }
+  @media (max-width:820px){
+    section{padding:64px 0}
+    .hero-grid{grid-template-columns:1fr; padding:48px 0 56px}
+    .hero-visual{max-width:440px; margin:0 auto; width:100%}
+    .badge{left:12px; bottom:16px}
+    .seasons-grid{grid-template-columns:1fr 1fr}
+    .season{padding:20px 16px; border-left:0; border-top:1px solid var(--linea)}
+    .season:nth-child(odd){border-right:1px solid var(--linea)}
+    .season:first-child, .season:nth-child(2){border-top:0}
+    .split{grid-template-columns:1fr; gap:32px}
+    .split-img{max-width:460px}
+    .servizi-grid{grid-template-columns:1fr}
+    .natale-inner{grid-template-columns:1fr; padding:48px 0}
+    .star-wrap{order:-1}
+    .star-wrap svg{width:150px}
+    .contatti-grid{grid-template-columns:1fr; gap:36px}
+    .nav-cta .btn-label{display:none}
+    .nav-cta .btn{padding:11px 14px}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{padding:0 18px}
+    .nav{gap:10px}
+    .brand{gap:9px}
+    .brand-mark{width:38px; height:38px}
+    .brand-name{font-size:19px}
+    .brand-sub{font-size:8px; letter-spacing:.14em; white-space:nowrap}
+    .hero h1{font-size:38px}
+    .cards{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .gallery figure.wide{grid-column:span 2; height:180px}
+    .mini-list{grid-template-columns:1fr; gap:12px}
+    .hero-facts{gap:22px}
+    .foot{flex-direction:column; align-items:flex-start}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto !important; transition:none !important; animation:none !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-bar">Anteprima dimostrativa — <strong>contenuti e foto da confermare</strong></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Femia Domenico, vivaio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 64 64" fill="none"><path d="M32 52V26M32 34c-9 0-14-5.5-14-14 9 0 14 5.5 14 14zm0 6c9 0 14-5.5 14-14-9 0-14 5.5-14 14z" stroke="#f6f1e6" stroke-width="3.6" stroke-linecap="round"/></svg>
+      </span>
+      <span>
+        <span class="brand-name">Femia Domenico</span>
+        <span class="brand-sub">Vivaio · Piante · Giardini</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <a href="#produzioni">Produzioni</a>
+      <a href="#azienda">Il vivaio</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="tel:+393207537760">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 3.5c.5 0 1 .3 1.2.8l1.2 2.7c.2.5.1 1-.3 1.4l-1.1 1.1c.9 1.9 2.5 3.5 4.4 4.4l1.1-1.1c.4-.4.9-.5 1.4-.3l2.7 1.2c.5.2.8.7.8 1.2v2.4c0 .9-.7 1.6-1.6 1.6C10.1 19 5 13.9 5 7.4c0-.9.7-1.3 1.6-1.3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <span class="btn-label">320 753 7760</span><span class="btn-label" style="display:none">Chiama</span>
+      </a>
+      <details class="menu">
+        <summary>Menu</summary>
+        <div class="menu-panel">
+          <a href="#produzioni">Produzioni</a>
+          <a href="#azienda">Il vivaio</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#galleria">Galleria</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" style="color:#e9c77e">Vivaio · Marina di Gioiosa Jonica</span>
+        <h1 id="hero-title">Piante da fiore<br>che nascono <em>qui</em>.</h1>
+        <p class="lead">Coltiviamo crisantemi, stelle di Natale, piante da fiore e aromatiche in pieno campo e in serra, sulla costa ionica della Calabria. Produzione propria, piante curate, consigli veri.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+393207537760">Chiama il vivaio</a>
+          <a class="btn btn-ghost" href="#produzioni">Scopri le produzioni</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><strong>Produzione</strong><span>propria</span></div>
+          <div class="fact"><strong>Pieno campo</strong><span>e serra</span></div>
+          <div class="fact"><strong>Giardini</strong><span>e movimento terra</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="arch">
+          <img src="img/hero.webp" alt="Fioriera sospesa con fiori rossi nel vivaio Femia Domenico" width="1080" height="1440" fetchpriority="high">
+        </div>
+        <div class="badge">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z" stroke="#16301f" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" stroke="#16301f" stroke-width="1.6"/></svg>
+          <span><b>Via Ligonia Carella, 2</b><small>89046 Marina di Gioiosa Jonica (RC)</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seasons">
+    <div class="wrap seasons-grid">
+      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Stelle di Natale</b><span>Novembre – Dicembre</span></span></div>
+      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Crisantemi</b><span>Ottobre – Novembre</span></span></div>
+      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Piante da fiore</b><span>Primavera – Autunno</span></span></div>
+      <div class="season"><span class="dot" aria-hidden="true"></span><span><b>Aromatiche e frutti</b><span>Stagione estiva</span></span></div>
+    </div>
+  </div>
+
+  <section id="produzioni">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Le nostre produzioni</span>
+        <h2>Quello che trovi in vivaio,<br>stagione per stagione.</h2>
+        <p>Non un catalogo online: piante vere, coltivate nei nostri campi. Vieni a sceglierle, oppure chiamaci per sapere cosa è pronto.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-img"><img src="img/crisantemi.webp" alt="File di crisantemi a palla in fioritura nel campo del vivaio" width="1080" height="1440"></div>
+          <div class="card-body"><span class="tag">Ottobre – Novembre</span><h3>Crisantemi</h3><p>A palla e a margherita, in tutte le tonalità dell'autunno.</p></div>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="img/dipladenia.webp" alt="Dipladenia in vaso sospeso con fiori rosa" width="1080" height="1440"></div>
+          <div class="card-body"><span class="tag">Primavera – Autunno</span><h3>Piante da fiore</h3><p>Dipladenie, vinca, gerani e fioriture da balcone e terrazzo.</p></div>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="img/fragole.webp" alt="Pianta di fragola in vaso appeso con frutti maturi" width="1080" height="1440"></div>
+          <div class="card-body"><span class="tag">Aprile – Giugno</span><h3>Piccoli frutti</h3><p>Fragole e piante da frutto in vaso, pronte da trapiantare.</p></div>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="img/lavanda.webp" alt="File di piante di lavanda in vaso pronte per la vendita" width="1080" height="1440"></div>
+          <div class="card-body"><span class="tag">Primavera – Estate</span><h3>Aromatiche</h3><p>Lavanda, rosmarino e aromatiche da giardino e da vaso.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="natale" class="natale" aria-labelledby="natale-title">
+    <div class="wrap natale-inner">
+      <div>
+        <span class="eyebrow">La stagione più attesa</span>
+        <h2 id="natale-title">Stelle di Natale,<br>colte al momento giusto.</h2>
+        <p>Da novembre arrivano in vivaio le stelle di Natale: piante compatte, con brattee rosse piene e una cura che si vede. Per casa, per un regalo, per allestire la tua attività.</p>
+        <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20informazioni%20sulle%20stelle%20di%20Natale" target="_blank" rel="noopener">Chiedi disponibilità su WhatsApp</a>
+      </div>
+      <div class="star-wrap" aria-hidden="true">
+        <svg viewBox="0 0 200 200" fill="none">
+          <g stroke="#e9c77e" stroke-width="1.6" opacity=".9">
+            <path d="M100 22v156M22 100h156M45 45l110 110M155 45L45 155" stroke-linecap="round"/>
+          </g>
+          <g fill="#c25a34" opacity=".95">
+            <ellipse cx="100" cy="62" rx="17" ry="34"/>
+            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(45 100 100)"/>
+            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(90 100 100)"/>
+            <ellipse cx="100" cy="62" rx="17" ry="34" transform="rotate(135 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="13" fill="#e9c77e"/>
+          <circle cx="100" cy="100" r="5" fill="#4d1b19"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="azienda">
+    <div class="wrap split">
+      <div class="split-img">
+        <img src="img/campo.webp" alt="Distesa di piante in vaso del vivaio con le colline calabresi sullo sfondo" width="1080" height="1920">
+      </div>
+      <div>
+        <span class="eyebrow">Il vivaio</span>
+        <h2>Una produzione che parte dalla terra.</h2>
+        <p>Il vivaio Femia Domenico lavora a Marina di Gioiosa Jonica, sulla costa ionica reggina. Le piante crescono qui, tra pieno campo e serra, seguite una per una fino al momento della vendita.</p>
+        <p>Oltre alle piante da fiore, ci occupiamo di arredo e cura del giardino e di movimento terra: dalla preparazione del terreno alla pianta messa a dimora.</p>
+        <div class="mini-list">
+          <div><b>Produzione propria</b><span>Piante coltivate in azienda, non solo rivendute.</span></div>
+          <div><b>Consiglio diretto</b><span>Chi coltiva sa cosa serve alla tua pianta.</span></div>
+          <div><b>Dal terreno al giardino</b><span>Piante, arredo verde e preparazione dei suoli.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servizi" class="servizi">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Servizi</span>
+        <h2>Non solo piante.</h2>
+        <p>Due attività che completano il vivaio e risolvono il lavoro più scomodo: preparare il terreno e sistemare il verde.</p>
+      </div>
+      <div class="servizi-grid">
+        <article class="servizio">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21V9M12 13c-4 0-6-2.4-6-6 4 0 6 2.4 6 6zm0 3c4 0 6-2.4 6-6-4 0-6 2.4-6 6z" stroke="#f6f1e6" stroke-width="1.6" stroke-linecap="round"/><path d="M5 21h14" stroke="#f6f1e6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Arredo e cura del giardino</h3>
+          <p>Fornitura e messa a dimora di piante, realizzazione di aiuole e sistemazione del verde di case, attività e spazi esterni.</p>
+        </article>
+        <article class="servizio">
+          <div class="ico" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 17h13v-4H8l-5 4z" stroke="#f6f1e6" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7" cy="19" r="1.8" stroke="#f6f1e6" stroke-width="1.6"/><circle cx="13" cy="19" r="1.8" stroke="#f6f1e6" stroke-width="1.6"/><path d="M16 13V8l4-3v8" stroke="#f6f1e6" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Movimento terra</h3>
+          <p>Scavi, livellamenti e preparazione dei terreni prima di piantare o sistemare: il lavoro che serve a far durare il giardino.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galleria">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Dal vivaio</span>
+        <h2>Il colore, da vicino.</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/crisantemi.webp" alt="Crisantemi colorati in pieno campo"><figcaption>Crisantemi in campo</figcaption></figure>
+        <figure><img src="img/hero.webp" alt="Fioriera sospesa con fiori rossi"><figcaption>Fioriture sospese</figcaption></figure>
+        <figure><img src="img/vinca.webp" alt="Vasi di vinca con fiori rosa"><figcaption>Vinca in vaso</figcaption></figure>
+        <figure><img src="img/fragole.webp" alt="Fragole in vaso appeso"><figcaption>Piccoli frutti</figcaption></figure>
+        <figure><img src="img/dipladenia.webp" alt="Dipladenia fiorita in serra"><figcaption>Dipladenia</figcaption></figure>
+        <figure><img src="img/lavanda.webp" alt="Lavanda in vaso pronta per la vendita"><figcaption>Lavanda</figcaption></figure>
+        <figure class="wide"><img src="img/campo.webp" alt="Distesa di piante in vaso con colline sullo sfondo"><figcaption>Pieno campo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="contatti">
+    <div class="wrap contatti-grid">
+      <div>
+        <span class="eyebrow">Contatti</span>
+        <h2>Passa a trovarci.</h2>
+        <p class="lead">Siamo in contrada, a due passi dal mare. Chiamaci prima di venire: ti diciamo cosa è pronto in vivaio e ti aspettiamo.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="ci" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z" stroke="#f6f1e6" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="#f6f1e6" stroke-width="1.6"/></svg></span>
+            <span><b>Indirizzo</b><span class="val">Via Ligonia Carella, 2<br>89046 Marina di Gioiosa Jonica (RC)</span></span>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 3.5c.5 0 1 .3 1.2.8l1.2 2.7c.2.5.1 1-.3 1.4l-1.1 1.1c.9 1.9 2.5 3.5 4.4 4.4l1.1-1.1c.4-.4.9-.5 1.4-.3l2.7 1.2c.5.2.8.7.8 1.2v2.4c0 .9-.7 1.6-1.6 1.6C10.1 19 5 13.9 5 7.4c0-.9.7-1.3 1.6-1.3z" stroke="#f6f1e6" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            <span><b>Telefono</b><a href="tel:+393207537760">320 753 7760</a><br><a href="tel:+393473500250">347 350 0250</a></span>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="#f6f1e6" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#f6f1e6" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+            <span><b>Email</b><a href="mailto:commisso-giuseppe@libero.it">commisso-giuseppe@libero.it</a></span>
+          </li>
+        </ul>
+        <div style="display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20informazioni%20sul%20vivaio" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Ligonia+Carella+2+Marina+di+Gioiosa+Jonica" target="_blank" rel="noopener">Apri in Google Maps</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <h3>Come arrivare</h3>
+        <p>Via Ligonia Carella, 2 — Marina di Gioiosa Jonica (RC).<br>Zona costiera, tra Gioiosa Ionica e Roccella.</p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Ligonia+Carella+2+Marina+di+Gioiosa+Jonica" target="_blank" rel="noopener">Indicazioni stradali</a>
+        <div class="hours">
+          <b>Orari</b>
+          Chiamaci per orari e disponibilità: in stagione le giornate cambiano spesso.
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Femia Domenico · P.IVA 01484290802 · Marina di Gioiosa Jonica (RC)</span>
+    <span>Anteprima dimostrativa realizzata per il vivaio — <a href="#top">torna su</a></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"GardenStore",
+  "name":"Femia Domenico",
+  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale e aromatiche. Arredo giardini e movimento terra.",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Via Ligonia Carella, 2",
+    "postalCode":"89046",
+    "addressLocality":"Marina di Gioiosa Jonica",
+    "addressRegion":"RC",
+    "addressCountry":"IT"
+  },
+  "telephone":"+393207537760",
+  "email":"commisso-giuseppe@libero.it",
+  "vatID":"01484290802",
+  "image":"https://savermall.github.io/vivaio-femia-demo/img/og.jpg",
+  "url":"https://savermall.github.io/vivaio-femia-demo/"
+}
+</script>
+</body>
+</html>
