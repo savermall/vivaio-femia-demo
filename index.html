@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Femia Domenico — Vivaio e piante a Marina di Gioiosa Jonica</title>
-<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, ciclamini, aromatiche, arredo giardini e movimento terra.">
+<meta name="description" content="Vivaio Femia Domenico a Marina di Gioiosa Jonica: piante da fiore, crisantemi, stelle di Natale, ciclamini, arredo giardini, movimento terra e noleggio ulivi per eventi.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Femia Domenico — Vivaio">
@@ -165,6 +165,22 @@
   .servizio h3{font-size:24px; margin:0 0 8px}
   .servizio p{color:var(--muto); font-size:15.5px; margin:0}
 
+  /* NOLEGGIO */
+  .rental{background:linear-gradient(180deg,#efe6d5 0%,#fbf8f1 100%); border-top:1px solid var(--linea)}
+  .rental-grid{display:grid; grid-template-columns:1.02fr .98fr; gap:56px; align-items:center}
+  .rental h2{font-size:clamp(30px,3.6vw,44px); line-height:1.1; margin:12px 0 16px}
+  .rental p.lead{color:#4c5348; margin:0 0 8px}
+  .rental-list{display:flex; flex-wrap:wrap; gap:8px; margin:26px 0 30px; padding:0; list-style:none}
+  .rental-list li{border:1px solid rgba(34,39,31,.16); border-radius:999px; padding:8px 14px; font-size:13px; background:rgba(255,255,255,.55)}
+  .rental-visual{position:relative; max-width:520px; width:100%; justify-self:end}
+  .rental-visual .big{margin:0; aspect-ratio:3/4; border-radius:24px; overflow:hidden; background:#e7dfce; box-shadow:0 26px 60px rgba(22,48,31,.18)}
+  .rental-visual .big img{width:100%; height:100%; object-fit:cover}
+  .rental-visual .note{position:absolute; left:-22px; bottom:26px; max-width:280px; background:var(--verde); color:var(--crema); border-radius:18px; padding:20px 22px; display:flex; flex-direction:column; gap:6px; box-shadow:0 18px 40px rgba(22,48,31,.28)}
+  .rental-visual .note b{font-family:'Fraunces',serif; font-size:20px; font-weight:500}
+  .rental-visual .note span{font-size:12.5px; color:rgba(246,241,230,.75); line-height:1.4}
+  .rental-cta{display:flex; flex-wrap:wrap; gap:12px}
+  .rental-note{font-size:12.5px; color:var(--muto); margin-top:16px}
+
   /* GALLERIA */
   .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
   .gallery figure{margin:0; border-radius:16px; overflow:hidden; position:relative; aspect-ratio:4/5; background:var(--crema)}
@@ -216,6 +232,9 @@
     .season:nth-child(odd){border-right:1px solid var(--linea)}
     .season:first-child, .season:nth-child(2){border-top:0}
     .split{grid-template-columns:1fr; gap:32px}
+    .rental-grid{grid-template-columns:1fr; gap:32px}
+    .rental-visual{order:-1; max-width:520px; width:100%; margin:0 auto; justify-self:center}
+    .rental-visual .note{left:12px; bottom:12px}
     .split-img{max-width:460px}
     .servizi-grid{grid-template-columns:1fr}
     .natale-inner{grid-template-columns:1fr; padding:48px 0}
@@ -264,6 +283,7 @@
       <a href="#produzioni">Produzioni</a>
       <a href="#azienda">Il vivaio</a>
       <a href="#servizi">Servizi</a>
+      <a href="#noleggio">Noleggio</a>
       <a href="#galleria">Galleria</a>
       <a href="#contatti">Contatti</a>
     </nav>
@@ -278,6 +298,7 @@
           <a href="#produzioni">Produzioni</a>
           <a href="#azienda">Il vivaio</a>
           <a href="#servizi">Servizi</a>
+          <a href="#noleggio">Noleggio</a>
           <a href="#galleria">Galleria</a>
           <a href="#contatti">Contatti</a>
         </div>
@@ -421,6 +442,31 @@
     </div>
   </section>
 
+  <section id="noleggio" class="rental">
+    <div class="wrap rental-grid">
+      <div>
+        <span class="eyebrow">Noleggio piante</span>
+        <h2>Ulivi secolari<br>per il tuo evento.</h2>
+        <p class="lead">Noleggiamo ulivi e piante di grande formato per matrimoni, ricevimenti, allestimenti e spazi commerciali. Le scegliamo con te, le portiamo noi, le ritiriamo a fine evento.</p>
+        <ul class="rental-list">
+          <li>Matrimoni e cerimonie</li>
+          <li>Ricevimenti e catering</li>
+          <li>Negozi e uffici</li>
+          <li>Set fotografici</li>
+        </ul>
+        <div class="rental-cta">
+          <a class="btn btn-primary" href="https://wa.me/393207537760?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20il%20noleggio%20di%20piante" target="_blank" rel="noopener">Chiedi un preventivo</a>
+          <a class="btn btn-dark" href="tel:+393207537760">320 753 7760</a>
+        </div>
+        <p class="rental-note">Disponibilità e quantità da concordare in base alla stagione e all'allestimento.</p>
+      </div>
+      <div class="rental-visual">
+        <figure class="big"><img src="img/olivi.webp" alt="Ulivi secolari in vaso pronti per il noleggio" width="900" height="1200"></figure>
+        <div class="note"><b>Consegna e ritiro</b><span>Trasporto, posizionamento e ritiro compresi nel servizio.</span></div>
+      </div>
+    </div>
+  </section>
+
   <section id="galleria">
     <div class="wrap">
       <div class="section-head">
@@ -434,6 +480,9 @@
         <figure><img src="img/fragole.webp" alt="Fragole in vaso appeso"><figcaption>Piccoli frutti</figcaption></figure>
         <figure><img src="img/dipladenia.webp" alt="Dipladenia fiorita in serra"><figcaption>Dipladenia</figcaption></figure>
         <figure><img src="img/lavanda.webp" alt="Lavanda in vaso pronta per la vendita"><figcaption>Lavanda</figcaption></figure>
+        <figure><img src="img/rosa.webp" alt="Rosa rossa in fiore nel roseto del vivaio"><figcaption>Rose</figcaption></figure>
+        <figure><img src="img/statua.webp" alt="Statua classica e arredi da giardino"><figcaption>Arredi da giardino</figcaption></figure>
+        <figure><img src="img/ficus.webp" alt="Grande pianta ornamentale in vaso in serra"><figcaption>Piante di grande formato</figcaption></figure>
         <figure class="wide"><img src="img/campo.webp" alt="Distesa di piante in vaso con colline sullo sfondo"><figcaption>Pieno campo</figcaption></figure>
       </div>
     </div>
@@ -490,7 +539,7 @@
   "@context":"https://schema.org",
   "@type":"GardenStore",
   "name":"Femia Domenico",
-  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale, ciclamini e aromatiche. Arredo giardini e movimento terra.",
+  "description":"Vivaio con produzione propria di piante da fiore, crisantemi, stelle di Natale, ciclamini e aromatiche. Arredo giardini, movimento terra e noleggio ulivi per eventi.",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"Via Ligonia Carella, 2",
